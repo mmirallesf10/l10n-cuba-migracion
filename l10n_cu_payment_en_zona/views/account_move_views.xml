@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="en_zona_inherited_view_move_form" model="ir.ui.view">
+            <field name="name">en.zona.account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//form/header/button[@name="action_register_payment"]' position='before'>
+                    <!-- Register Payment (only to refund invoices) -->
+                    <field name="payment_with_en_zona" invisible="1"/>
+                    <button name="action_en_zona_invoice_register_payment" id="en_zona_account_invoice_payment_btn"
+                            type="object" class="oe_highlight"
+                            attrs="{'invisible': ['|', '|', '|', ('state', '!=', 'posted'),
+                            ('payment_state', '!=', 'not_paid'), ('move_type', '!=', 'out_refund'),
+                            ('payment_with_en_zona', '=', False)]}"
+                            string="Register Payment with En Zona"
+                            groups="account.group_account_invoice"
+                    confirm="You are about to pay this refund through En Zona platform. Are you sure you want to continue?"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

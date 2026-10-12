@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="payment_provider_view_form_inherit_en_zona" model="ir.ui.view">
+        <field name="name">payment.provider.view.form.inherit.en.zona</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr='//group[@name="provider_credentials"]' position='inside'>
+                <group attrs="{'invisible': [('code', '!=', 'en_zona')]}" colspan="8">
+                    <group string="En Zona Credentials">
+                        <field name="en_zona_consumer_key" attrs="{'required':[ ('code', '=', 'en_zona'), ('state', '!=', 'disabled')],
+                    'readonly':[('en_zona_access_token', '!=', False)]}"/>
+                        <field name="en_zona_consumer_secret" attrs="{'required':[ ('code', '=', 'en_zona'), ('state', '!=', 'disabled')],
+                    'readonly':[('en_zona_access_token', '!=', False)]}"/>
+                    </group>
+                    <group string="Access token">
+                        <field name="en_zona_access_token" attrs="{'invisible':[('en_zona_access_token', '=', False)]}"/>
+                        <field name="en_zona_expiration_date" attrs="{'invisible':[('en_zona_access_token', '=', False)]}"/>
+                        <button string="Get Token" class="btn btn-primary" type="object" name="en_zona_token_action"
+                                attrs="{'invisible':[('en_zona_access_token', '!=', False)]}" context="{'do_action': 'to_get'}"/>
+                        <button string="Refresh Token" class="btn btn-primary" type="object" name="en_zona_token_action"
+                                attrs="{'invisible':[('en_zona_access_token', '=', False)]}" context="{'do_action': 'to_refresh'}"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

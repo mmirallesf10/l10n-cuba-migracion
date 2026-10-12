@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="redirect_en_zona_form">
+             <form t-att-action="api_url" method="get">
+                    <input type="hidden" name="description" t-att-value="description"/>
+                    <input type="hidden" name="currency" t-att-value="currency"/>
+
+<!--                    &lt;!&ndash; Amount Details &ndash;&gt;-->
+<!--                    <input type="hidden" name="amount_total" t-att-value="amount.total"/>-->
+<!--                    <input type="hidden" name="amount_shipping" t-att-value="amount.details.shipping"/>-->
+<!--                    <input type="hidden" name="amount_tax" t-att-value="amount.details.tax"/>-->
+<!--                    <input type="hidden" name="amount_discount" t-att-value="amount.details.discount"/>-->
+
+                    <!-- Merchant Info -->
+                    <input type="hidden" name="merchant_uuid" t-att-value="merchant_uuid"/>
+                    <input type="hidden" name="merchant_op_id" t-att-value="merchant_op_id"/>
+                    <input type="hidden" name="invoice_number" t-att-value="invoice_number"/>
+<!--        -->
+<!--                    &lt;!&ndash; URLs &ndash;&gt;-->
+<!--                    <input type="hidden" name="return_url" t-att-value="return_url"/>-->
+<!--                    <input type="hidden" name="cancel_url" t-att-value="cancel_url"/>-->
+<!--        -->
+<!--                    &lt;!&ndash; Buyer Info &ndash;&gt;-->
+<!--                    <input type="hidden" name="buyer_identity_code" t-att-value="buyer_identity_code"/>-->
+<!--                    <input type="hidden" name="buyer_name" t-att-value="buyer_info.name"/>-->
+<!--                    <input type="hidden" name="buyer_email" t-att-value="buyer_info.email"/>-->
+<!--        -->
+<!--                    &lt;!&ndash; Timestamp &ndash;&gt;-->
+<!--                    <input type="hidden" name="timestamp" t-att-value="timestamp"/>-->
+
+             </form>
+</template>
+
+</odoo>

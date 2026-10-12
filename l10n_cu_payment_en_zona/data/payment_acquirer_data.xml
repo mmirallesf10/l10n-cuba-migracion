@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data >
+        <record id="payment_icon_en_zona" model="payment.icon">
+            <field name="name">EnZona</field>
+            <field name="image" type="base64" file="l10n_cu_payment_en_zona/static/description/icon.png"/>
+        </record>
+        <record id="payment_provider_en_zona" model="payment.provider">
+            <field name="name">En Zona</field>
+            <field name="image_128" type="base64" file="l10n_cu_payment_en_zona/static/src/img/en_zona.png"/>
+            <field name="code">en_zona</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="module_id" ref="base.module_l10n_cu_website_sale_en_zona"/>
+            <field name="payment_icon_ids" eval='[(6, 0, [ref("l10n_cu_payment_en_zona.payment_icon_en_zona")])]'/>
+            <field name="redirect_form_view_id" ref="l10n_cu_payment_en_zona.redirect_en_zona_form"/>
+<!--            <field name="description" type="html">-->
+<!--                <p>Usted será redireccionado a la plataforma En Zona después de presionar el botón de pago.</p>-->
+<!--            </field>-->
+        </record>
+    </data>
+</odoo>

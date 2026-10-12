@@ -1,0 +1,155 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cu_payment_en_zona
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20200421\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-29 17:49+0000\n"
+"PO-Revision-Date: 2020-09-29 17:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:ir.ui.view,arch_db:l10n_cu_payment_en_zona.payment_provider_view_form_inherit_en_zona
+msgid "Access token"
+msgstr "Token de Acceso"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields.selection,name:l10n_cu_payment_en_zona.selection__payment_provider__provider__en_zona
+#: model:payment.provider,name:l10n_cu_payment_en_zona.payment_provider_en_zona
+msgid "En Zona"
+msgstr "En Zona"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_provider__en_zona_access_token
+msgid "En Zona Access Token"
+msgstr "Token de Acceso"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_provider__en_zona_consumer_key
+msgid "En Zona Consumer Key"
+msgstr "Consumer Key"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_provider__en_zona_consumer_secret
+msgid "En Zona Consumer Secret"
+msgstr "Consumer secret"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:ir.ui.view,arch_db:l10n_cu_payment_en_zona.payment_provider_view_form_inherit_en_zona
+msgid "En Zona Credentials"
+msgstr "Credenciales"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_provider__en_zona_expiration_date
+msgid "En Zona Expiration Date"
+msgstr "Fecha de expiración"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_transaction__ez_tx_id
+msgid "En Zona Transaction ID"
+msgstr "Transacción"
+
+#. module: l10n_cu_payment_en_zona
+#: code:addons/l10n_cu_payment_en_zona/models/payment.py:0
+#, python-format
+msgid "En Zona: received data with missing transaction_uuid (%s)"
+msgstr "En Zona: datos recibidos con id de transacción faltante"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:ir.ui.view,arch_db:l10n_cu_payment_en_zona.payment_provider_view_form_inherit_en_zona
+msgid "Get Token"
+msgstr "Obtener Token"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model,name:l10n_cu_payment_en_zona.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: l10n_cu_payment_en_zona
+#: code:addons/l10n_cu_payment_en_zona/models/payment.py:0
+#, python-format
+msgid "Missing credentials, please check them out!"
+msgstr "Credenciales faltantes, por favor revíselas!"
+
+#. module: l10n_cu_payment_en_zona
+#: code:addons/l10n_cu_payment_en_zona/models/payment.py:0
+#, python-format
+msgid "Missing token, please check it out!"
+msgstr "Token faltante, por favor revíselo!"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model,name:l10n_cu_payment_en_zona.model_payment_provider
+msgid "Payment Acquirer"
+msgstr "Método de pago"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model,name:l10n_cu_payment_en_zona.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "Transacción de pago"
+
+#. module: l10n_cu_payment_en_zona
+#: code:addons/l10n_cu_payment_en_zona/models/payment.py:0
+#: code:addons/l10n_cu_payment_en_zona/models/payment.py:0
+#, python-format
+msgid "Payment method disabled!"
+msgstr "Método de pago deshabilitado"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_account_move__payment_with_en_zona
+msgid "Payment with En Zona"
+msgstr "Pago con En Zona"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_provider__provider
+msgid "Provider"
+msgstr "Proveedor"
+
+#. module: l10n_cu_payment_en_zona
+#: model:ir.model.fields,field_description:l10n_cu_payment_en_zona.field_payment_transaction__ez_redirect_link
+msgid "Redirect link"
+msgstr "Link a redireccionar"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:ir.ui.view,arch_db:l10n_cu_payment_en_zona.payment_provider_view_form_inherit_en_zona
+msgid "Refresh Token"
+msgstr "Actualizar Token"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:ir.ui.view,arch_db:l10n_cu_payment_en_zona.en_zona_inherited_view_move_form
+msgid "Register Payment with En Zona"
+msgstr "Registrar Pago con En Zona"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:ir.ui.view,arch_db:l10n_cu_payment_en_zona.en_zona_inherited_view_move_form
+msgid ""
+"You are about to pay this refund through En Zona platform. Are you sure you "
+"want to continue?"
+msgstr "Usted está a punto de realizar esta devolución a través de la plataforma En Zona. Está seguro de que desea continuar?"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:payment.provider,auth_msg:l10n_cu_payment_en_zona.payment_provider_en_zona
+msgid "Your payment has been authorized."
+msgstr "Su pago ha sido autorizado"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:payment.provider,cancel_msg:l10n_cu_payment_en_zona.payment_provider_en_zona
+msgid "Your payment has been cancelled."
+msgstr "Su pago ha sido cancelado"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:payment.provider,pending_msg:l10n_cu_payment_en_zona.payment_provider_en_zona
+msgid ""
+"Your payment has been successfully processed but is waiting for approval."
+msgstr "Su pago ha sido procesado con éxito, pero está esperando su aprobación"
+
+#. module: l10n_cu_payment_en_zona
+#: model_terms:payment.provider,done_msg:l10n_cu_payment_en_zona.payment_provider_en_zona
+msgid "Your payment has been successfully processed. Thank you!"
+msgstr "Su pago ha sido procesado con éxito, Gracias!"
